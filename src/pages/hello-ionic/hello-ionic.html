@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label stacked>Username</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="Username" placeholder="Username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-input type="password" value="" [(ngModel)]="Password" placeholder="Password"></ion-input>
+  </ion-item>
+    
+    <!-- The (click) is the same as onClick in JavaScript -->
+    <button ion-button (click)='authenticate_func();'>Login</button>
+
+</ion-list>
+
+</ion-content>
